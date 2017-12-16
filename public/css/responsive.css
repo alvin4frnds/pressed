@@ -1,0 +1,210 @@
+/* Medium Layout: 1280px. */
+@media only screen and (min-width: 992px) and (max-width: 1200px) { 
+.navbar-collapse a.room-item {
+    margin-left: 65%;  
+}
+.order-multiselet ul li {
+ 
+    padding: 20px 36px;
+}
+
+
+
+}
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) { 
+.navbar-collapse a.room-item {
+ margin-left: 65%;
+  
+}
+.order-multiselet ul li {
+    padding: 20px 24px;
+}
+
+.order-history .order-his-table a.order-btn {
+
+    margin-bottom: 10px;
+}
+.payment-top p {
+    font-size: 14px;
+
+}
+    
+}
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) { 
+      .navbar-collapse a.room-item {
+
+    margin-left: 0%;
+  
+}
+.dropdown-menu > li > a {
+    display: block;
+    padding: 15px 20px;
+    clear: both;
+    font-weight: 400;
+    line-height: 1.42857143;
+    color: #333;
+    white-space: nowrap;
+    text-transform: capitalize;
+}
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #777;
+    padding: 10px 15px;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu>li>a:focus, .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
+    color: #fff;
+    background-color: #FC7A7A;
+} 
+.pickup-details p {
+    min-height: 56px;
+    background: #fff;
+    padding: 10px;
+}
+.order-multiselet ul li {
+    text-align: center;
+    padding: 15px 20px;
+}
+.payment-top h3 {
+    font-size: 24px;
+    
+}
+.payment-top p {
+    font-size: 13px;
+
+}
+
+
+}
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) { 
+
+.navbar-right li.profile {
+  
+    float: right;
+}
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    color: #555;
+    background-color: #e7e7e7;
+    width: 100%;
+}
+.order-history .order-his-table h4{
+    font-size: 13px;
+    font-weight: 600;
+}
+.order-history .order-his-table a.order-btn {
+
+    margin-bottom: 10px;
+}
+.payment-top p {
+    font-size: 13px;
+
+}
+.payment-top h3 {
+    font-size: 20px;
+    
+}
+
+.table-responsive {
+    width: 100%;
+    margin-bottom: 15px;
+    overflow-y: hidden;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    border: 1px solid transparent;
+}
+
+}
+
+@media screen and (max-width:1266px) {
+	.navbar-brand>img {
+    display: block;
+    width: 80%;
+}
+
+
+
+@media screen and (max-width:766px) {
+	header {
+    padding: 1% 0 12% 0;
+}
+
+
+
+}
+
+@media screen and (max-width:770px) {
+.navbar-brand>img {
+    display: block;
+    width: 80%;
+}
+
+
+
+}
+
+@media screen and (max-width:480px) {
+.calculate-section h2 {
+    padding-top: 20px;
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+.calculate-section {
+    padding: 0px 0 40px 0;
+}
+
+.calculate-section input[type="submit"] {
+    background: #e20038;
+    color: white;
+    border: none;
+    padding: 18px 36px;
+    font-size: 30px;
+    margin: 50px 0 0 0;
+    border-radius: 20px;
+}
+.payment-top p {
+    font-size: 13px;
+  
+}
+.payment-top h3 {
+    font-size: 18px;
+    
+}
+}
+
+@media screen and (max-width:320px) {
+    a.demos-btn{
+        font-size: 12px;
+    } 
+
+    a.demo-btn{
+        font-size: 12px;
+    }
+    .order-history .order-his-table h4{
+    font-size: 13px;
+    font-weight: 600;
+}
+.payment-top p {
+    font-size: 12px;
+    text-transform: capitalize;
+    padding-top: 30px;
+}
+.payment-top h3 {
+    font-size: 16px;
+    
+}
+
+
+}
+
+@media screen and (max-width:1000px) {
+	.calculate-section br{
+	display: none;
+}
+
+
+}
+
+
+
+
