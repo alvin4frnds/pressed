@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="facebook-app-client-id" content="871629239710896">
     <meta name="google-signin-client_id" content="152654844989-060rj3nmkr7udbmvmef39mg3prm6brg3.apps.googleusercontent.com">
-    <title>Pressed</title>
+    <title>{{ env("APP_NAME", "Pressed") }}</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="all"/>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
@@ -15,11 +16,18 @@
 
     <script src="js/angular.min.js"></script>
     <script src="js/angular-route.js"></script>
-    <script src="https://cdn.jsdelivr.net/satellizer/0.15.5/satellizer.min.js"></script>
+    <script src="dist/satellizer.min.js"></script>
+    <script src="dist/sdk.js"></script>
+
 </head>
 <body>
+
+<script>
+    var globalVars = {!! json_encode($data) !!};
+</script>
+
 <!--- start main-wrapper -->
-<div class="main-wrapper" ng-app="app" id="layout-app" ng-controller="LayoutController">
+<div class="main-wrapper" ng-app="app" id="layout-app" ng-controller="LayoutController" ng-init="boot()" ng-class='{"is-loading": config.isLoading}'>
 
     <nav ng-show="config.oldHeader" class="navbar navbar-default">
         <div class="container-fluid">
@@ -82,7 +90,7 @@
                 <ul class="nav navbar-nav navbar-right">
 
                     <li class="dropdown profile" style="border: 0">
-                        <a href="#" class="dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="background-color: #f9f9f9; padding-top: 10px; padding-bottom: 10px;">hi jasse! <img src="images/Man.png" alt=""> <span class="caret"></span></a>
+                        <a href="#" class="dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="background-color: #f9f9f9; padding-top: 10px; padding-bottom: 10px;">hi @{{ config.firstName || "there" }}! <img ng-src='@{{ config.profileImage || "images/Man.png" }}' alt="" style="width: 32px; height: 32px;"> <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="#"><img src="images/i5.png" alt="icon"> my profile</a></li>
                             <li><a href="#"><span>1</span>  upcomeing order(s)</a></li>
@@ -105,6 +113,7 @@
 
     <script src="js/angular/index.js"></script>
     <script src="js/angular/SignupLogin.js"></script>
+    <script src="js/angular/HomeController.js"></script>
 
     <!-- footer-area -->
     <footer class="footer-area">
@@ -177,10 +186,31 @@
 </div>
 <!--- End Main-wrapper -->
 
-<script src="https://code.jquery.com/jquery-3.2.1.min.js" type="text/javascript"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="dist/jquery-3.2.1.min.js" type="text/javascript"></script>
+<script src="dist/bootstrap.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/custom.js"></script>
+<script src="js/js.cookie.js"></script>
+
+<script>
+    globalVars.user = JSON.parse(Cookies.get('user') || "{}");
+    FB.init({
+        appId: getMetaValue('facebook-app-client-id'),
+        version: 'v2.11'
+    });
+
+    function getMetaValue(key) {
+        var metas = document.getElementsByTagName('meta');
+
+        for (var i=0; i < metas.length; i++) {
+            if (key === metas[i].getAttribute("name")) {
+                return metas[i].getAttribute("content");
+            }
+        }
+
+        return "";
+    }
+</script>
 
 
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->

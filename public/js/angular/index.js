@@ -17,6 +17,10 @@ app.config(function($routeProvider) {
             templateUrl: 'html/create-account.htm',
             controller: 'SignupLogin'
         })
+        .when("/home", {
+            templateUrl : "html/landing1.htm",
+            controller: 'HomeController'
+        })
         .when('/location', {
             templateUrl: 'html/create-account.htm'
         })
@@ -35,21 +39,27 @@ app.config(function($routeProvider) {
 });
 app.config(function($authProvider) {
     $authProvider.facebook({
-        clientId: '871629239710896',
-        responseType: 'token',
-        redirectUri: window.location.origin + '/index.html'
+        clientId: getMetaValue('facebook-app-client-id'),
+        responseType: 'token'
     });
     $authProvider.google({
-        clientId: '152654844989-060rj3nmkr7udbmvmef39mg3prm6brg3.apps.googleusercontent.com',
-        responseType: 'token',
-        redirectUri: window.location.origin + '/index.html'
+        clientId: getMetaValue('google-signin-client_id'),
+        responseType: 'token'
     });
 });
 
 app.controller('LayoutController', function($scope, $auth) {
     $scope.config = {
-        oldHeader: true
+        oldHeader: true,
+        isLoading: false,
+        firstName: null,
+        profileImage: null,
     };
+
+    $scope.$on('IsLoading', function(event, data) {
+        console.log("Received event 'IsLoading with ", data);
+        $scope.config.isLoading = !!data;
+    });
 
     // listen for the event in the relevant $scope
     $scope.$on('ShowOldHeader', function (event, data) {
@@ -64,6 +74,7 @@ app.controller('LayoutController', function($scope, $auth) {
         $auth.authenticate(method)
             .then(function(response) {
                 console.log("Success while authenticating. ", response);
+                globalVars.oauthResp = response;
                 $scope.$broadcast("FoundToken", {
                     token: $auth.getToken(),
                     method: method
@@ -71,6 +82,25 @@ app.controller('LayoutController', function($scope, $auth) {
             }).catch(function(error) {
             console.log("Error while authenticating. ", error)
         });
+    };
+
+    $scope.boot = function() {
+        console.log("booting the application.");
+        console.log(globalVars);
+        if (globalVars.user.id) {
+            $scope.config.oldHeader = true;
+            window.location = "https://" + window.location.hostname + "/#!/home";
+
+            setUserDetails(globalVars.user)
+        }
+
+    };
+
+    $scope.$on('SetUser', function(event, data) { setUserDetails(data) });
+
+    function setUserDetails(userObj) {
+        $scope.config.firstName = userObj.name.split(" ")[0] || "there";
+        $scope.config.profileImage = userObj.image || null;
     }
 });
 
@@ -78,3 +108,7 @@ app.controller('Main', function($scope) {
     // console.log($scope.oldHeader);
 });
 
+function redirectTo(where) {
+    where = where || 'home';
+    window.location = "https://" + window.location.hostname + "/#!/" + where;
+}

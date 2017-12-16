@@ -1,115 +1,136 @@
+<!--- start container -->
+<div class="container-fluid">
 
-    <!--- start container -->
-        <div class="container-fluid">
 
-
-            <div class="row">
-                <div class="col-md-4">
+    <div class="row">
+        <div class="col-md-4">
             <!--- start Registration -->
             <div class="registration">
-              <section class="social-sign text-center">
-                   <h1>lets get started!</h1>
+                <section class="social-sign text-center">
+                    <h1>lets get started!</h1>
 
-               <p >Sign up with your email and phone number so we can send you status updates on your order</p>
-               <div class="signup-btn">
-                   <div class="col-md-6"><button><i class="" aria-hidden="true"><img src="img/facebook.png" alt="f"></i>&nbsp;&nbsp;Sign up with facebook</button></div>
-                   <div class="col-md-6"><button><i class="" aria-hidden="true"><img src="img/google.png" alt="g"></i>&nbsp;&nbsp;Sign up with google</button></div>
-               
-               </div>
-              </section>
-            <!--- Start form-section -->
-              <section class="signup">
-                  <form class="form-horizontal" action="#" method="post">
-                    <div class="col-md-12">
-                        <div class="col-md-12 ">
-                            <div class="form-group ">
-                                <div class="">
-                                    <div class="input-group">
-                                        <span class="input-group-addon"><i class="" aria-hidden="true"><img src="img/full-name.png" alt="FN"></i></span>
-                                        <input type="text" class="form-control" name="uname"  placeholder="Enter your full name" id="inputGroupSuccess2" aria-describedby="inputGroupSuccess2Status">
-                                    </div>
-                                </div>
-                            </div>
+                    <p>Sign up with your email and phone number so we can send you status updates on your order</p>
+                    <div class="signup-btn">
+                        <div class="col-md-6">
+                            <button ng-click="authenticate('facebook')"><i class="" aria-hidden="true"><img src="img/facebook.png" alt="f"></i>&nbsp;&nbsp;Sign
+                                up with facebook
+                            </button>
                         </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="col-md-12 ">
-                            <div class="form-group ">
-                                <div class="">
-                                    <div class="input-group">
-                                        <span class="input-group-addon"><i class="" aria-hidden="true"><img src="img/email.png" alt="E"></i></span>
-                                        <input type="text" class="form-control" name="uname"  placeholder="Email address" id="inputGroupSuccess2" aria-describedby="inputGroupSuccess2Status">
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="col-md-6">
+                            <button ng-click="authenticate('google')"><i class="" aria-hidden="true"><img src="img/google.png" alt="g"></i>&nbsp;&nbsp;Sign
+                                up with google
+                            </button>
                         </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="col-md-12 ">
-                            <div class="form-group ">
-                                <div class="">
-                                    <div class="input-group">
-                                        <span class="input-group-addon"><i class="" aria-hidden="true"><img src="img/phone.png" alt="P"></i></span>
-                                        <input type="text" class="form-control" name="uname"  placeholder="Phone Number" id="inputGroupSuccess2" aria-describedby="inputGroupSuccess2Status">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="col-md-12 ">
-                            <div class="form-group ">
-                                <div class="">
-                                    <div class="input-group">
-                                        <span class="input-group-addon"><i class="" aria-hidden="true"><img src="img/password.png" alt="PW"></i></span>
-                                        <input type="text" name="uphone" class="form-control" placeholder="Password (min 6 characters)" id="inputGroupSuccess2" aria-describedby="inputGroupSuccess2Status">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                   
-                    <div class="col-md-12">
-                        <div class="col-md-12 ">
-                            <div class="form-group">
-                                <input name="submit" type="submit" class="form-control submit" value="Create your account">
-                            </div>
-                        </div>
-                    </div>
 
-                </form>
-              </section>
-              <!--- End form-section -->
-            <div class="signinop">
-                <p>By creating an account, you agree to our Terms,  Already have an account? <a href="#!login">Log in</a> </p>
-            </div>
+                    </div>
+                </section>
+                <!--- Start form-section -->
+                <section class="signup">
+                    <form class="form-horizontal" action="#" method="post" ng-submit="registerMe()" onsubmit="return false">
+                        <div class="col-md-12">
+                            <div class="col-md-12 ">
+                                <div class="form-group ">
+                                    <div class="">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="" aria-hidden="true"><img
+                                                    src="img/full-name.png" alt="FN"></i></span>
+                                            <input type="text" class="form-control" name="name"
+                                                   placeholder="Enter your full name" id="name" ng-model="user.name"
+                                                   minlength="3" required
+                                                   aria-describedby="inputGroupSuccess2Status">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="col-md-12 ">
+                                <div class="form-group ">
+                                    <div class="">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="" aria-hidden="true"><img
+                                                    src="img/email.png" alt="E"></i></span>
+                                            <input type="email" class="form-control" name="uname" required
+                                                   placeholder="Email address" id="input-email" ng-model="user.email"
+                                                   aria-describedby="inputGroupSuccess2Status">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="col-md-12 ">
+                                <div class="form-group ">
+                                    <div class="">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="" aria-hidden="true"><img
+                                                    src="img/phone.png" alt="P"></i></span>
+                                            <input type="number" class="form-control" name="uname" required
+                                                   min="6123456789" max="9999999999"
+                                                   placeholder="Phone Number" id="input-phone" ng-model="user.phone"
+                                                   aria-describedby="inputGroupSuccess2Status">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="col-md-12 ">
+                                <div class="form-group ">
+                                    <div class="">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="" aria-hidden="true"><img
+                                                    src="img/password.png" alt="PW"></i></span>
+                                            <input type="password" name="uphone" class="form-control" required
+                                                   placeholder="Password (min 6 characters)" id="input-password" ng-model="user.password"
+                                                   aria-describedby="inputGroupSuccess2Status">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-12">
+                            <div class="col-md-12 ">
+                                <div class="form-group">
+                                    <input name="submit" type="submit" class="form-control submit"
+                                           value="Create your account">
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+                </section>
+                <!--- End form-section -->
+                <div class="signinop">
+                    <p>By creating an account, you agree to our Terms, Already have an account? <a href="#!login">Log
+                        in</a></p>
+                </div>
 
             </div>
             <!--- End registration -->
         </div>
 
 
-
-
         <div class="col-md-8">
             <div class="row">
                 <div class="main-body text-center">
-                <div class="main-content">
-                    <h1>Pressed</h1>
-                <p style="font-family: Graphik-medium;color: #7c7c7c;">Loren ipsum dolor sit, ammet, consectetur adipiscing elit.</p>
+                    <div class="main-content">
+                        <h1>Pressed</h1>
+                        <p style="font-family: Graphik-medium;color: #7c7c7c;">Loren ipsum dolor sit, ammet, consectetur
+                            adipiscing elit.</p>
+                    </div>
+
+
+                    <img src="img/sign-bg.png" class="img-responsive">
+
                 </div>
-
-
-                <img src="img/sign-bg.png" class="img-responsive">
-                
             </div>
-            </div>
-            
+
 
         </div>
 
 
-
-        </div>
-            </div>
+    </div>
+</div>

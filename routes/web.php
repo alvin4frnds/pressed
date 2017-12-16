@@ -11,4 +11,4 @@
 |
 */
 
-Route::get('/', function () { return file_get_contents(public_path('index.html')); });
+Route::get('/', 'PagesController@index')->middleware('web');;
