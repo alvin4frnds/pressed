@@ -21,6 +21,14 @@ app.config(function($routeProvider) {
             templateUrl : "html/landing1.htm",
             controller: 'HomeController'
         })
+        .when('/wash-&-fold', {
+            templateUrl: "html/landing2.htm",
+            controller: 'HomeController'
+        })
+        .when('/dry-clean', {
+            templateUrl: "html/landing2.htm",
+            controller: 'HomeController'
+        })
         .when('/location', {
             templateUrl: 'html/create-account.htm'
         })

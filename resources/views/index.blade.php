@@ -90,7 +90,7 @@
                 <ul class="nav navbar-nav navbar-right">
 
                     <li class="dropdown profile" style="border: 0">
-                        <a href="#" class="dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="background-color: #f9f9f9; padding-top: 10px; padding-bottom: 10px;">hi @{{ config.firstName || "there" }}! <img ng-src='@{{ config.profileImage || "images/Man.png" }}' alt="" style="width: 32px; height: 32px;"> <span class="caret"></span></a>
+                        <a class="dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="background-color: #f9f9f9; padding-top: 10px; padding-bottom: 10px;">hi @{{ config.firstName || "there" }}! <img ng-src='@{{ config.profileImage || "images/Man.png" }}' alt="" style="width: 32px; height: 32px;"> <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="#"><img src="images/i5.png" alt="icon"> my profile</a></li>
                             <li><a href="#"><span>1</span>  upcomeing order(s)</a></li>
