@@ -99,8 +99,7 @@
                             <li><a href="#"><img src="images/i3.png" alt="icon">  instructions & care</a></li>
                             <li><a href="#"><img src="images/i4.png" alt="icon">  notifications</a></li>
                             <li><a href="#"><i class="fa fa-question-circle-o" aria-hidden="true"></i>  help</a></li>
-
-                            </li>
+                            <li><a href="#!/logout"><i class="fa fa fa-sign-out" aria-hidden="true"></i>  Sign-out</a></li>
                         </ul>
             </div><!-- /.navbar-collapse -->
             <!-- Start header -->

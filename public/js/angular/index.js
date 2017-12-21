@@ -13,6 +13,10 @@ app.config(function($routeProvider) {
             templateUrl : "html/login.htm",
             controller: 'SignupLogin'
         })
+        .when("/logout", {
+            templateUrl : "html/login.htm",
+            controller: 'Logout'
+        })
         .when('/forgot-password', {
             templateUrl: "html/password-recover.htm",
             controller: "SignupLogin"
@@ -31,6 +35,26 @@ app.config(function($routeProvider) {
         })
         .when('/dry-clean', {
             templateUrl: "html/landing2.htm",
+            controller: 'HomeController'
+        })
+        .when('/payments', {
+            templateUrl: "html/payments.htm",
+            controller: 'HomeController'
+        })
+        .when('/save-card', {
+            templateUrl: "html/save-card.htm",
+            controller: 'HomeController'
+        })
+        .when('/order-status', {
+            templateUrl: "html/order-status.htm",
+            controller: 'HomeController'
+        })
+        .when('/order-history', {
+            templateUrl: "html/order-history.htm",
+            controller: 'HomeController'
+        })
+        .when('/order-receipt', {
+            templateUrl: "html/order-receipt.htm",
             controller: 'HomeController'
         })
         .when('/location', {
@@ -114,6 +138,15 @@ app.controller('LayoutController', function($scope, $auth) {
         $scope.config.firstName = userObj.name.split(" ")[0] || "there";
         $scope.config.profileImage = userObj.image || null;
     }
+
+    $scope.$on('logout', function(event, data) {
+        $scope.config.firstName = "there";
+        $scope.config.profileImage = null;
+
+        globalVars.user = {};
+        Cookies.set('user', globalVars.user);
+        window.location = "https://" + window.location.hostname + "/#!/";
+    });
 });
 
 app.controller('Main', function($scope) {

@@ -135,3 +135,10 @@ app.controller('SignupLogin', function($scope, $http) {
             })
     }
 });
+
+app.controller('Logout', function($scope, $http) {
+    console.log("logout() called:");
+
+    $scope.$emit('logout', true);
+    $scope.$emit('ShowOldHeader', true);
+});

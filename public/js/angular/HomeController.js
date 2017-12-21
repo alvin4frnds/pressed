@@ -14,5 +14,12 @@ app.controller('HomeController', function($scope) {
         console.log("gettheimage() called: ");
 
         $scope.mainImage = (globalVars.mainImage === "wash-&-fold") ? "images/food.png" : "images/dry-clean.png";
+    };
+
+    $scope.logout = function() {
+        console.log("logout() called:");
+
+        $scope.$emit('logout', true);
+        $scope.$emit('ShowOldHeader', true);
     }
 });
