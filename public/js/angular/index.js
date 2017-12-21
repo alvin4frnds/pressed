@@ -39,23 +39,23 @@ app.config(function($routeProvider) {
         })
         .when('/payments', {
             templateUrl: "html/payments.htm",
-            controller: 'HomeController'
+            controller: 'Main'
         })
         .when('/save-card', {
             templateUrl: "html/save-card.htm",
-            controller: 'HomeController'
+            controller: 'Main'
         })
         .when('/order-status', {
             templateUrl: "html/order-status.htm",
-            controller: 'HomeController'
+            controller: 'Main'
         })
         .when('/order-history', {
             templateUrl: "html/order-history.htm",
-            controller: 'HomeController'
+            controller: 'Main'
         })
         .when('/order-receipt', {
             templateUrl: "html/order-receipt.htm",
-            controller: 'HomeController'
+            controller: 'Main'
         })
         .when('/location', {
             templateUrl: 'html/create-account.htm'
