@@ -90,6 +90,7 @@ app.controller('LayoutController', function($scope, $auth) {
         isLoading: false,
         firstName: null,
         profileImage: null,
+        showHeaderFooter: true
     };
 
     $scope.$on('IsLoading', function(event, data) {
@@ -104,6 +105,11 @@ app.controller('LayoutController', function($scope, $auth) {
 
         // show/hide the Oldheader. using this
         // $scope.$emit('ShowOldHeader', false);
+    });
+
+    $scope.$on("showHeaderFooter", function(event, data) {
+        console.log("Received event 'showHeaderFooter' with ", data);
+        $scope.config.showHeaderFooter = !!data;
     });
 
     $scope.authenticate = function(method) {
@@ -151,6 +157,8 @@ app.controller('LayoutController', function($scope, $auth) {
 
 app.controller('Main', function($scope) {
     // console.log($scope.oldHeader);
+    // 
+    $scope.$emit('showHeaderFooter', true);
 });
 
 function redirectTo(where) {

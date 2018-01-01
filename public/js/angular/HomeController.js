@@ -3,6 +3,7 @@
  */
 app.controller('HomeController', function($scope) {
     $scope.$emit('ShowOldHeader', false);
+    $scope.$emit("showHeaderFooter", true);
 
     $scope.goToLanding2 = function(page) {
         console.log("goToLanding called with: ", page);

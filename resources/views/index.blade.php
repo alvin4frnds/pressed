@@ -29,7 +29,7 @@
 <!--- start main-wrapper -->
 <div class="main-wrapper" ng-app="app" id="layout-app" ng-controller="LayoutController" ng-init="boot()" ng-class='{"is-loading": config.isLoading}'>
 
-    <nav ng-show="config.oldHeader" class="navbar navbar-default">
+    <nav ng-show="config.oldHeader && config.showHeaderFooter" class="navbar navbar-default greyish-font-color" id="old-header">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -44,7 +44,7 @@
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav" style="margin-left: 40px;">
                     <li class="active"><a href="#!location">Locations <span class="sr-only">(current)</span></a></li>
                     <li><a href="#!pricing">Pricing</a></li>
                     <li><a href="#!process">Our Process</a></li>
@@ -53,8 +53,8 @@
                 </ul>
 
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#!login" style="color:#000">Login</a></li>
-                    <li><a href="#!request-demo" style="color:#000; padding: 8px; margin: 5px;">Request a Demo</a></li>
+                    <li><a href="#!login" class="sign-on-links" style="">Login</a></li>
+                    <li><a href="#!request-demo" class="sign-on-links request-demo-button" style="padding: 8px; margin: 5px;">Request a Demo</a></li>
 
                 </ul>
             </div><!-- /.navbar-collapse -->
@@ -63,7 +63,7 @@
             <!-- End header -->
         </div><!-- /.container-fluid -->
     </nav>
-    <nav ng-hide="config.oldHeader" class="navbar navbar-default" style="margin-top: 0; background-color: white;">
+    <nav ng-hide="config.oldHeader" ng-show='config.showHeaderFooter' class="navbar navbar-default" style="margin-top: 0; background-color: white;box-shadow: 0px 2px 10px 0 lightgrey;">
 
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -115,7 +115,7 @@
     <script src="js/angular/HomeController.js"></script>
 
     <!-- footer-area -->
-    <footer class="footer-area">
+    <footer class="footer-area" ng-show="config.showHeaderFooter">
         <div class="container">
             <div class="col-md-10 col-md-offset-1">
 

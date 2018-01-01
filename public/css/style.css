@@ -171,7 +171,6 @@ th, td {
 .navbar-default .navbar-nav>li>a {
 	color: #777;
     font-size: 13px;
-    font-family: Graphik-medium; 
 }
 .process-item-content h5{
 	
@@ -208,10 +207,11 @@ color: #777;
 a.demos-btn{
 	background: #FF7373;
     color: #fff;
-    padding: 10px 10px;
+    padding: 12px 24px;
     border-radius: 6px;
     text-decoration: none;
     text-transform: capitalize;
+    margin-right: 18px;
 
 }
 a.demos-btn:hover{
@@ -221,7 +221,7 @@ a.demos-btn:hover{
 a.demo-btn{
 	color: #39383A;
 	text-decoration: none;
-	  padding: 10px 10px;
+	padding: 12px 24px;
     border-radius: 6px;
     border: 1px solid #ccc;
     text-transform: capitalize;
@@ -245,7 +245,9 @@ process
 
 .process{
 	overflow: hidden;
-	
+    background-color: #FBFBFB;
+    border: solid 1px #E8E8E8;
+    padding-top: 14px;
 }
 .process-text{
 	text-align: center;
@@ -328,6 +330,8 @@ process
 }
 .process-item-content h3{
 	color: #3C3B3D;
+    margin-top: 10px;
+    margin-bottom: 30px;
 	font-size: 18px;
 	font-family: Graphik-medium;
 }
@@ -336,9 +340,16 @@ process
 	font-size: 14px;
 }
 .process-item-content{
-	overflow: hidden;
-	
-	margin: 30px 0;
+	background-color: white;
+    padding: 18px;
+    overflow: hidden;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    box-shadow: 7px 10px 11px 0 #f8f8f8;
+}
+
+.process-item-img {
+    box-shadow: 7px 10px 11px 0 #f8f8f8;
 }
 
 .instruction-care{
@@ -1271,3 +1282,43 @@ div.is-loading:after {
         transform: rotate(360deg);
     }
 }
+
+
+
+
+html, body, #bs-example-navbar-collapse-1 {
+    background-color: white;
+}
+
+.greyish-font-color {
+    color: #9B9B9B;
+}
+
+#old-header {
+    margin-top: 10px;
+}
+
+.sign-on-links {
+    color: black;
+    font-family: Graphik-medium;
+}
+
+.light-font {
+    font-family: Graphik-Light;
+}
+
+.request-demo-button {
+    padding: 5px;
+    padding-top: 8px;
+    padding-bottom: 3px;
+    margin: 5px;
+}
+
+.home-btn-font {
+    font-size: 13px;
+}
+
+.process-item-container {
+    padding: 0 30px 60px;
+}
+
