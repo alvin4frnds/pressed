@@ -125,7 +125,7 @@ th, td {
 
 .dropdown-menu>li>a {
     display: block;
-    padding: 15px 20px;
+    padding: 10px 20px;
     clear: both;
     font-weight: 400;
     line-height: 1.42857143;
@@ -170,7 +170,7 @@ th, td {
 
 .navbar-default .navbar-nav>li>a {
 	color: #777;
-    font-size: 13px;
+    font-size: 14px;
 }
 .process-item-content h5{
 	
@@ -650,7 +650,8 @@ premium-area
 .premium-area{
     overflow: hidden;
     text-align: center;
-    margin: 50px 0;
+    padding: 50px 0 0;
+    background-color: #f8f8f8;
 }
 .premium-title h3{
     color: #3C3A3C;
@@ -1320,6 +1321,10 @@ html, body, #bs-example-navbar-collapse-1 {
     font-family: Graphik-regular, serif !important;
 }
 
+.bold-font {
+    font-family: Graphik-medium, serif !important;
+}
+
 .light-font-color {
     color: #9BA6AE;
 }
@@ -1425,4 +1430,90 @@ a.close-button-mine:hover {
 
 .password-background {
     /*background-color: rgba(239, 241, 247, 0.45);*/
+}
+
+.spaced-font {
+    letter-spacing: 0.46px
+}
+
+img.premium-bottom-image {
+    position: relative;
+    bottom:  0;
+    z-index:  2;
+}
+
+div.premium-bottom-image {
+    display: block;
+    height: 10px;
+    width: 100%;
+    background-color: #58AD94;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+}
+
+footer.light-green-strip {
+    display: block;
+    height: 75px;
+    width: 100%;
+    background-color: #6BDBBA;
+}
+
+section.landing2-area {
+    background-color: #f8f8f8;
+}
+
+.landing-2-titles {
+    letter-spacing: 0.34px;
+    color: #696969;
+}
+
+.landing-2-inputs {
+    color: black;
+    padding-left: 0;
+}
+
+input::-webkit-input-placeholder {
+    color: black !important;
+    letter-spacing: 0.46px;
+}
+
+input:-moz-placeholder { /* Firefox 18- */
+    color: black !important;
+    letter-spacing: 0.46px;
+}
+
+input::-moz-placeholder {  /* Firefox 19+ */
+    color: black !important;
+    letter-spacing: 0.46px;
+}
+
+input:-ms-input-placeholder {
+    color: black !important;
+    letter-spacing: 0.46px;
+}
+
+span.badge {
+    position: absolute;
+    right: 50px;
+    top: 16px;
+    background-color: #FF8686;
+}
+
+a.drop-down-anchor {
+    max-height: 60px;
+}
+
+img.drop-down-anchor {
+    width: 28px;
+    height: 28px;
+    margin-right: 10px;
+}
+
+ul.dropdown-menu>li {
+    border-bottom: solid 1px #EEEEEE;
+}
+
+ul.dropdown-menu {
+    padding-bottom: 0;
 }

@@ -63,7 +63,7 @@
             <!-- End header -->
         </div><!-- /.container-fluid -->
     </nav>
-    <nav ng-show="!config.oldHeader && config.showHeaderFooter" class="navbar navbar-default" style="margin-top: 0; background-color: white;box-shadow: 0px 2px 10px 0 lightgrey;">
+    <nav ng-show="!config.oldHeader && config.showHeaderFooter" class="navbar navbar-default" style="margin-top: 0; margin-bottom: 0; background-color: white;box-shadow: 0px 2px 10px 0 lightgrey;">
 
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -74,7 +74,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#"><img class="img-responsive" src="images/logo.png" alt="logo"></a>
+                <a class="navbar-brand" href="#"><img class="img-responsive" src="images/logo.png" alt="logo" style="max-width: 150px"></a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="background-color: white;">
@@ -82,7 +82,10 @@
                 <div class="col-md-2 col-md-offset-3">
                     <ul class="nav navbar-nav navbar-center">
 
-                        <a class="room-item" href="#"><img src="images/ca.png" alt=""> laundry room</a>
+                        <li>
+                            <a class="room-item bold-font" href="#" style="margin-top: 5px; color: black;">
+                                <img src="images/ca.png" alt="">&nbsp;&nbsp; laundry room</a>
+                        </li>
 
                     </ul>
                 </div>
@@ -90,16 +93,25 @@
                 <ul class="nav navbar-nav navbar-right">
 
                     <li class="dropdown profile" style="border: 0">
-                        <a class="dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="background-color: #f9f9f9; padding-top: 10px; padding-bottom: 10px;">hi @{{ config.firstName || "there" }}! <img ng-src='@{{ config.profileImage || "images/Man.png" }}' alt="" style="width: 32px; height: 32px;"> <span class="caret"></span></a>
+                        <a class="dropdown-toggle bold-font" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false"
+                           style="position: relative; background-color: #f9f9f9; padding-top: 20px; padding-bottom: 10px;">hi @{{ config.firstName || "there" }}
+                            !&nbsp;&nbsp;&nbsp;
+                                <img ng-src='@{{ config.profileImage || "images/Man.png" }}' alt=""
+                                        style="width: 40px; height: 40px; border-radius: 20px;">
+                                <span class="badge">1</span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <span class="fa fa-ellipsis-v" aria-hidden="true" style="font-size: 30px; color: #D8D8D8; vertical-align: middle;"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#"><img src="images/i5.png" alt="icon"> my profile</a></li>
-                            <li><a href="#"><span>1</span>  upcomeing order(s)</a></li>
-                            <li><a href="#"><img src="images/i1.png" alt="icon">  order history</a></li>
-                            <li><a href="#"><img src="images/i2.png" alt="icon">  payment</a></li>
-                            <li><a href="#"><img src="images/i3.png" alt="icon">  instructions & care</a></li>
-                            <li><a href="#"><img src="images/i4.png" alt="icon">  notifications</a></li>
-                            <li><a href="#"><i class="fa fa-question-circle-o" aria-hidden="true"></i>  help</a></li>
-                            <li><a href="#!/logout"><i class="fa fa fa-sign-out" aria-hidden="true"></i>  Sign-out</a></li>
+                            <li><a class="drop-down-anchor" href="#"><img class="drop-down-anchor" src="images/dropdown-profile.png" alt="icon"> my profile</a></li>
+                            <li><a class="drop-down-anchor" href="#"><img class="drop-down-anchor" src="images/dropdown-one.png" alt="icon"> upcomeing order(s)</a></li>
+                            <li><a class="drop-down-anchor" href="#"><img class="drop-down-anchor" src="images/dropdown-history.png" alt="icon"> order history</a></li>
+                            <li><a class="drop-down-anchor" href="#"><img class="drop-down-anchor" src="images/dropdown-payment.png" alt="icon"> payment</a></li>
+                            <li><a class="drop-down-anchor" href="#"><img class="drop-down-anchor" src="images/dropdown-instructions.png" alt="icon"> instructions & care</a></li>
+                            <li><a class="drop-down-anchor" href="#"><img class="drop-down-anchor" src="images/dropdown-notification.png" alt="icon"> notifications</a></li>
+                            <li><a class="drop-down-anchor" href="#"><img class="drop-down-anchor" src="images/dropdown-help.png" alt="icon"> help</a></li>
+                            <li><a class="drop-down-anchor" href="#!/logout"><img class="drop-down-anchor" src="images/dropdown-out.png" alt="icon"> Sign-out</a>
+                            </li>
                         </ul>
             </div><!-- /.navbar-collapse -->
             <!-- Start header -->
@@ -115,7 +127,7 @@
     <script src="js/angular/HomeController.js"></script>
 
     <!-- footer-area -->
-    <footer class="footer-area" ng-show="config.showHeaderFooter">
+    <footer class="footer-area" ng-show="config.oldHeader && config.showHeaderFooter">
         <div class="container-fluid">
             <div class="col-md-10 col-md-offset-1">
 
@@ -205,6 +217,7 @@
             </div>
         </div>
     </footer>
+    <footer class="light-green-strip" ng-show="!config.oldHeader && config.showHeaderFooter"></footer>
 
     <!-- footer-area -->
 </div>
