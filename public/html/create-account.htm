@@ -4,12 +4,21 @@
 
     <div class="row">
         <div class="col-md-4">
+
+            <div class="row" style="margin-top: 18px">
+                <div class="col-sm-1 col-sm-offset-11 col-xs-2 col-xs-offset-10">
+                    <span class="pull-right close-button-mine">
+                        <a href="#" class="close-button-mine">&times;</a>
+                    </span>
+                </div>
+            </div>
+
             <!--- start Registration -->
             <div class="registration">
                 <section class="social-sign text-center">
                     <h1>lets get started!</h1>
 
-                    <p>Sign up with your email and phone number so we can send you status updates on your order</p>
+                    <p class="regular-font" style="letter-spacing: 0.46px">Sign up with your email and phone number so we can send you status updates on your order</p>
                     <div class="signup-btn">
                         <div class="col-md-6">
                             <button ng-click="authenticate('facebook')"><i class="" aria-hidden="true"><img src="img/facebook.png" alt="f"></i>&nbsp;&nbsp;Sign
@@ -32,8 +41,7 @@
                                 <div class="form-group ">
                                     <div class="">
                                         <div class="input-group">
-                                            <span class="input-group-addon"><i class="" aria-hidden="true"><img
-                                                    src="img/full-name.png" alt="FN"></i></span>
+                                            <span class="input-group-addon" style="background: url('img/full-name-white.png') no-repeat center center;"></span>
                                             <input type="text" class="form-control" name="name"
                                                    placeholder="Enter your full name" id="name" ng-model="user.name"
                                                    minlength="3" required
@@ -48,8 +56,7 @@
                                 <div class="form-group ">
                                     <div class="">
                                         <div class="input-group">
-                                            <span class="input-group-addon"><i class="" aria-hidden="true"><img
-                                                    src="img/email.png" alt="E"></i></span>
+                                            <span class="input-group-addon" style="background: url('img/email-white.png') no-repeat center center;"></span>
                                             <input type="email" class="form-control" name="uname" required
                                                    placeholder="Email address" id="input-email" ng-model="user.email"
                                                    aria-describedby="inputGroupSuccess2Status">
@@ -63,8 +70,7 @@
                                 <div class="form-group ">
                                     <div class="">
                                         <div class="input-group">
-                                            <span class="input-group-addon"><i class="" aria-hidden="true"><img
-                                                    src="img/phone.png" alt="P"></i></span>
+                                            <span class="input-group-addon" style="background: url('img/phone-white.png') no-repeat center center;"></span>
                                             <input type="number" class="form-control" name="uname" required
                                                    min="6123456789" max="9999999999"
                                                    placeholder="Phone Number" id="input-phone" ng-model="user.phone"
@@ -79,10 +85,10 @@
                                 <div class="form-group ">
                                     <div class="">
                                         <div class="input-group">
-                                            <span class="input-group-addon"><i class="" aria-hidden="true"><img
-                                                    src="img/password.png" alt="PW"></i></span>
-                                            <input type="password" name="uphone" class="form-control" required
+                                            <span class="input-group-addon password-background" style="background: rgba(239, 241, 247, 0.45) url('img/password-white.png') no-repeat center center;"></span>
+                                            <input type="password" name="uphone" class="form-control password-background" required
                                                    placeholder="Password (min 6 characters)" id="input-password" ng-model="user.password"
+                                                   style="background-color: rgba(239, 241, 247, 0.45)"
                                                    aria-describedby="inputGroupSuccess2Status">
                                         </div>
                                     </div>
@@ -104,7 +110,7 @@
                 </section>
                 <!--- End form-section -->
                 <div class="signinop">
-                    <p>By creating an account, you agree to our Terms, Already have an account? <a href="#!login">Log
+                    <p class="regular-font" style="text-align: center; letter-spacing: 0.46px">By creating an account, you agree to our Terms, Already have an account? <a href="#!login">Log
                         in</a></p>
                 </div>
 
@@ -117,8 +123,8 @@
             <div class="row">
                 <div class="main-body text-center">
                     <div class="main-content">
-                        <h1>Pressed</h1>
-                        <p style="font-family: Graphik-medium;color: #7c7c7c;">Loren ipsum dolor sit, ammet, consectetur
+                        <h1 class="regular-font" style="font-size: 27px">Pressed</h1>
+                        <p class="regular-font" style="color: #9B9B9B;">Loren ipsum dolor sit, ammet, consectetur
                             adipiscing elit.</p>
                     </div>
 

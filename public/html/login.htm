@@ -4,12 +4,19 @@
 
     <div class="row">
         <div class="col-md-4">
+            <div class="row" style="margin-top: 18px">
+                <div class="col-sm-1 col-sm-offset-11 col-xs-2 col-xs-offset-10">
+                    <span class="pull-right close-button-mine">
+                        <a href="#" class="close-button-mine">×</a>
+                    </span>
+                </div>
+            </div>
             <!--- start Registration -->
             <div class="registration">
                 <section class="social-sign text-center">
                     <h1>welcome back!</h1>
 
-                    <p>login to your account here.</p>
+                    <p class="regular-font" style="letter-spacing: 0.46px">login to your account here.</p>
                     <div class="signup-btn">
                         <div class="col-md-6">
                             <button ng-click="authenticate('facebook')">
@@ -43,8 +50,7 @@
                                 <div class="form-group ">
                                     <div class="">
                                         <div class="input-group">
-                                            <span class="input-group-addon"><i class="" aria-hidden="true"><img
-                                                    src="img/email.png" alt="E"></i></span>
+                                            <span class="input-group-addon" style="background: url('img/email-white.png') no-repeat center center;"></span>
                                             <input type="email" class="form-control" name="email"
                                                    placeholder="Email address" id="email" ng-model="user.email"
                                                    required
@@ -60,10 +66,10 @@
                                 <div class="form-group ">
                                     <div class="">
                                         <div class="input-group">
-                                            <span class="input-group-addon"><i class="" aria-hidden="true"><img
-                                                    src="img/phone.png" alt="P"></i></span>
+                                            <span class="input-group-addon" style="background: rgba(239, 241, 247, 0.45) url('img/password-white.png') no-repeat center center;"></span>
                                             <input type="password" name="password" class="form-control" placeholder="Password"
                                                    required ng-model="user.password"
+                                                   style="background-color: rgba(239, 241, 247, 0.45)"
                                                    id="password" aria-describedby="inputGroupSuccess2Status">
                                         </div>
                                     </div>
@@ -84,7 +90,8 @@
                 </section>
                 <!--- End form-section -->
                 <div class="signinop">
-                    <p>Forgot your Password?<a href="#!forgot-password"> recover it here</a> <br> Don't have an account? <a href="#!create-account">Sign up</a></p>
+                    <p class="regular-font light-font-color" style="text-align: center; letter-spacing: 0.46px">
+                        Forgot your Password?<a href="#!forgot-password"> recover it here</a> <br><br> Don't have an account? <a href="#!create-account">Sign up</a></p>
 
 
                 </div>
@@ -98,8 +105,8 @@
             <div class="row">
                 <div class="main-body text-center">
                     <div class="main-content">
-                        <h1>Pressed</h1>
-                        <p>Loren ipsum dolor sit, ammet, consectetur adipiscing elit.</p>
+                        <h1 class="regular-font" style="font-size: 27px">Pressed</h1>
+                        <p class="regular-font" style="color: #9B9B9B;">Loren ipsum dolor sit, ammet, consectetur adipiscing elit.</p>
                     </div>
 
 

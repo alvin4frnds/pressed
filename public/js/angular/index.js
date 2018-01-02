@@ -159,6 +159,7 @@ app.controller('Main', function($scope) {
     // console.log($scope.oldHeader);
     // 
     $scope.$emit('showHeaderFooter', true);
+    $scope.$emit("ShowOldHeader", true);
 });
 
 function redirectTo(where) {

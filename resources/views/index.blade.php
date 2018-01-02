@@ -63,7 +63,7 @@
             <!-- End header -->
         </div><!-- /.container-fluid -->
     </nav>
-    <nav ng-hide="config.oldHeader" ng-show='config.showHeaderFooter' class="navbar navbar-default" style="margin-top: 0; background-color: white;box-shadow: 0px 2px 10px 0 lightgrey;">
+    <nav ng-show="!config.oldHeader && config.showHeaderFooter" class="navbar navbar-default" style="margin-top: 0; background-color: white;box-shadow: 0px 2px 10px 0 lightgrey;">
 
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->

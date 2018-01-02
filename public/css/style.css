@@ -42,7 +42,7 @@ a {
 }
 
 .registration{
-	padding: 50px 0;
+	padding: 32px 0 0;
 	overflow: hidden;
 }
 
@@ -1316,6 +1316,10 @@ html, body, #bs-example-navbar-collapse-1 {
     font-family: Graphik-Light, serif;
 }
 
+.regular-font {
+    font-family: Graphik-regular, serif !important;
+}
+
 .light-font-color {
     color: #9BA6AE;
 }
@@ -1366,4 +1370,59 @@ a.subscribe-button {
 .process-text-container {
     background: url(../images/clean-laundary-at-finger-tips-background.png) no-repeat;
     background-size: 100%;
+}
+
+span.input-group-addon {
+    min-width: 40px;
+}
+
+input.form-control {
+    border: none;
+    box-shadow: none;
+}
+
+div.input-group {
+    border-radius: 5px;
+    border: 1px solid rgba(155, 155, 155, 0.22);
+}
+
+input, textarea {
+    outline: none;
+    box-shadow:none !important;
+    border: none;
+}
+
+input::-webkit-input-placeholder {
+    font-size: 12px; !important;
+    font-family: Graphik-regular, serif;
+}
+
+a.close-button-mine {
+    display: block;
+    height: 20px;
+    width: 20px;
+    margin: auto;
+    padding: 3px 0 10px 0;
+    font-size: 24px;
+    text-align: center;
+    color: #FF8686;
+}
+
+span.close-button-mine {
+    width: 40px;
+    height: 40px;
+    background-color: #F7F7F7;
+    border-radius: 20px;
+}
+
+a.close-button-mine:hover {
+    text-decoration: none;
+}
+
+.signup-btn {
+    margin-bottom: 100px;
+}
+
+.password-background {
+    /*background-color: rgba(239, 241, 247, 0.45);*/
 }

@@ -136,6 +136,8 @@ app.controller('SignupLogin', function($scope, $http) {
                 console.log('got the error', error)
             })
     }
+
+    addEventListeners()
 });
 
 app.controller('Logout', function($scope, $http) {
@@ -144,3 +146,38 @@ app.controller('Logout', function($scope, $http) {
     $scope.$emit('logout', true);
     $scope.$emit('ShowOldHeader', true);
 });
+
+function addEventListeners() {
+
+    var images = {
+        "name": {"focus": "full-name", "blur": "full-name-white"},
+        "input-password": {"focus": "password", "blur": "password-white"},
+        "input-phone": {"focus": "phone", "blur": "phone-white"},
+        "input-email": {"focus": "email", "blur": "email-white"},
+        "email": {"focus": "email", "blur": "email-white"},
+        "inputGroupSuccess2": {"focus": "email", "blur": "email-white"},
+        "password": {"focus": "password", "blur": "password-white"}
+    };
+
+    $("#input-email, #input-password, #input-phone, #name, #email, #password, input#inputGroupSuccess2").on('focus blur', function (event) {
+        var imageName = "img/" + images[event.target.id][event.type] + ".png";
+        var css = {"background": "url(" +imageName + ") no-repeat center center"};
+        $(this).parent().children('span').css(css);
+
+        if (event.type === 'focus') {
+            $(this).parent().css({"box-shadow": "-2px 3px 4px 2px rgba(0, 0, 0, 0.05)"});
+            if (event.target.id === "password" || event.target.id === "input-password") {
+                $(this).parent().children('span').css({"background-color": "white"});
+                $(this).css({"background-color": "white"});
+            }
+        } else {
+            $(this).parent().css({"box-shadow": "none"});
+            if (event.target.id === "password" || event.target.id === "input-password") {
+                $(this).parent().children('span').css({"background-color": "rgba(239, 241, 247, 0.45)"});
+                $(this).css({"background-color": "rgba(239, 241, 247, 0.45)"});
+            }
+        }
+    });
+}
+
+var testing = false;
