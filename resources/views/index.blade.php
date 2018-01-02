@@ -53,8 +53,8 @@
                 </ul>
 
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#!login" class="sign-on-links" style="">Login</a></li>
-                    <li><a href="#!request-demo" class="sign-on-links request-demo-button" style="padding: 8px; margin: 5px;">Request a Demo</a></li>
+                    <li><a href="#!login" class="sign-on-links" style="color: black; font-family: Graphik-regular,serif;">Login</a></li>
+                    <li style="margin-top: 5px;"><a href="#!request-demo" class="sign-on-links request-demo-button" style="padding: 8px; margin: 5px; color: black; font-family: Graphik-regular,serif;">Request a Demo</a></li>
 
                 </ul>
             </div><!-- /.navbar-collapse -->
@@ -116,7 +116,7 @@
 
     <!-- footer-area -->
     <footer class="footer-area" ng-show="config.showHeaderFooter">
-        <div class="container">
+        <div class="container-fluid">
             <div class="col-md-10 col-md-offset-1">
 
                 <div class="row">
@@ -128,23 +128,29 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-3">
+                    <div class="col-sm-3 col-md-3">
                         <div class="about-text">
-                            <h3>about us</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                                tincidunt ut laoreet dolore magna aliquam erat volutpat</p>
+                            <p class="footer-link"><a class="footer-link" href="#about-us">About Us</a></p>
+                            <p class="footer-link"><a class="footer-link" href="#about-us">Gifting</a></p>
+                            <p class="footer-link"><a class="footer-link" href="#about-us">Become A Valet</a></p>
+                            <p class="footer-link"><a class="footer-link" href="#about-us">Become A Vendor</a></p>
+                            <p class="footer-link"><a class="footer-link" href="#about-us">Partnership</a></p>
+                            <p class="footer-link"><a class="footer-link" href="#about-us">Download The App</a></p>
                         </div>
                     </div>
 
                     <div class="col-sm-3">
                         <div class="usefull-link">
-                            <h5>Legal</h5>
-                            <ul>
-                                <li><a href="#">Location</a></li>
-                                <li><a href="#">Pricing</a></li>
-                                <li><a href="#">Process</a></li>
-                                <li><a href="#">About</a></li>
-                            </ul>
+                            <p class="footer-link">
+                                <span class="footer-link">
+                                    Legal
+                                </span>
+                            </p>
+                            <div class="about-text">
+                                <p class="footer-link"><a class="footer-link" href="#about-us">Privacy</a></p>
+                                <p class="footer-link"><a class="footer-link" href="#about-us">Disclosure</a></p>
+                                <p class="footer-link"><a class="footer-link" href="#about-us">Terms Of Service</a></p>
+                            </div>
                         </div>
 
                         <div class="social-link">
@@ -157,13 +163,22 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-3 col-sm-offset-3">
+                    <div class="col-sm-4 col-sm-offset-2">
                         <div class="subcribe">
-                            <h4>Lorem ipsum dolor sit amet</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                                tincidun</p>
-                            <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+                            <p class="footer-link">
+                                <span class="footer-link">
+                                    Keep in touch
+                                </span>
+                            </p>
+                            <p class="footer-link">Stay updated on our new service areas, promos, and more</p>
+                            <p><a class="btn btn-primary subscribe-button" href="#" role="button">SUBSCRIBE</a></p>
                         </div>
+                    </div>
+
+                    <div class="clearfix"></div>
+
+                    <div class="col-md-11 col-md-offset-1 col-sm-11 col-sm-offset-1">
+                        <hr style="border-top: solid 1px #DBD7D7; opacity: 0.53">
                     </div>
 
                     <div class="col-sm-12">
@@ -171,14 +186,24 @@
                             <div class="col-sm-6">
                                 <p>AxiomThemes © 2017. All Rights Reserved Terms of Use and Privacy Policy</p>
                             </div>
-                            <div class="col-sm-6">
-                                <p>Locations | (current) | Pricing | Our Process | About</p>
+                            <div class="col-sm-6" style="padding-right: 0">
+                                <p class="pull-right">
+                                    <a href="#location" class="footer-link">Locations</a>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+                                    {{--<a href="#location" class="footer-link">(current)</a>--}}
+                                    {{--&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;--}}
+                                    <a href="#location" class="footer-link">Pricing</a>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <a href="#location" class="footer-link">Our Process</a>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <a href="#location" class="footer-link">About</a>
                             </div>
                         </div>
                     </div>
 
                 </div>
             </div>
+        </div>
     </footer>
 
     <!-- footer-area -->

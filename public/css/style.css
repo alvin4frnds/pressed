@@ -206,6 +206,7 @@ color: #777;
 
 a.demos-btn{
 	background: #FF7373;
+    border: solid 1px #FF7373;
     color: #fff;
     padding: 12px 24px;
     border-radius: 6px;
@@ -354,8 +355,8 @@ process
 
 .instruction-care{
 	overflow: hidden;
-	background: #FBFBFB;
 }
+
 .instruction-care  span i{
 	background: #FF8686;
     color: #fff;
@@ -485,10 +486,21 @@ process
 
 .shedule{
     overflow: hidden;
+    background-color: #FBFBFB;
+    border: solid 1px #E8E8E8;
+    padding-top: 14px;
+    padding-bottom: 60px;
 }
 .shedule-content{
-    margin: 50px 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
+
+section.pickub-area {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
 .shedule-content h2{
     font-size:22px;
     /* font-weight: 600; */
@@ -500,12 +512,13 @@ process
     padding: 10px 15px;
     text-decoration: none;
     margin-top: 20px;
-    font-family: Graphik-medium;
+    font-family: Graphik-regular, serif;
     display: inline-block;
 }
 .shedule h4{
     /* font-weight: 700; */
     font-family: Graphik-medium;
+    margin: 20px 0;
 }
 .shedule .box{
     text-align: center;
@@ -515,14 +528,14 @@ process
 
 .instruction-care{
     margin-top: 40px;
-	font-family: Graphik-Medium;
+    margin-bottom: 40px;
+    font-family: Graphik-Medium, serif;
 }
 
 .instruction-left{
-           text-align: center;
     vertical-align: middle;
     margin-top: 20%;
-    font-family: Graphik-Medium;
+    font-family: Graphik-Medium, serif;
 }
 
 .pickub-left {
@@ -561,7 +574,7 @@ process
     color: #fff;
 }
 .about-text {
-    text-transform: capitalize;
+    padding-top: 4px;
 }
 .about-text h3{
     text-transform: capitalize;
@@ -588,7 +601,7 @@ process
 }
 
 .social-link {
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .social-link ul{
@@ -604,7 +617,7 @@ process
     text-decoration: none;
     color: #fff;
     font-size: 20px;
-    padding: 10px 15px;
+    padding: 10px 25px 10px 0;
 }
 
 .subcribe{
@@ -626,8 +639,6 @@ process
 }
 
 .footer-bottom{
-    border-top: 1px solid #ccc;
-    padding: 50px 0;
 }
 
 
@@ -1284,8 +1295,6 @@ div.is-loading:after {
 }
 
 
-
-
 html, body, #bs-example-navbar-collapse-1 {
     background-color: white;
 }
@@ -1300,18 +1309,24 @@ html, body, #bs-example-navbar-collapse-1 {
 
 .sign-on-links {
     color: black;
-    font-family: Graphik-medium;
+    font-family: Graphik-medium, serif;
 }
 
 .light-font {
-    font-family: Graphik-Light;
+    font-family: Graphik-Light, serif;
+}
+
+.light-font-color {
+    color: #9BA6AE;
 }
 
 .request-demo-button {
-    padding: 5px;
-    padding-top: 8px;
-    padding-bottom: 3px;
-    margin: 5px;
+    padding: 5px 18px 2px !important;
+    /*margin: 5px;*/
+}
+.request-demo-button-small {
+    padding: 8px 18px 5px !important;
+    /*margin: 5px;*/
 }
 
 .home-btn-font {
@@ -1322,3 +1337,33 @@ html, body, #bs-example-navbar-collapse-1 {
     padding: 0 30px 60px;
 }
 
+p.footer-link {
+    margin-bottom: 6px;
+    color: #D8D8D8;
+}
+
+a.footer-link {
+    color: #D8D8D8;
+}
+
+span.footer-link {
+    font-family: Graphik-medium, serif;
+    color: #AAA9A9;
+}
+
+a.subscribe-button {
+    padding-top: 10px;
+    font-size: 12px;
+}
+
+/*noinspection CssUnknownTarget*/
+.slider-wrapper {
+    background: url(../images/long-live-your-laundary-background.png) no-repeat left bottom;
+    background-size: 100%;
+}
+
+/*noinspection CssUnknownTarget*/
+.process-text-container {
+    background: url(../images/clean-laundary-at-finger-tips-background.png) no-repeat;
+    background-size: 100%;
+}
