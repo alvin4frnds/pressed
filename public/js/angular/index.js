@@ -39,23 +39,23 @@ app.config(function($routeProvider) {
         })
         .when('/payments', {
             templateUrl: "html/payments.htm",
-            controller: 'Main'
+            controller: 'HomeController'
         })
         .when('/save-card', {
             templateUrl: "html/save-card.htm",
-            controller: 'Main'
+            controller: 'HomeController'
         })
         .when('/order-status', {
             templateUrl: "html/order-status.htm",
-            controller: 'Main'
+            controller: 'HomeController'
         })
         .when('/order-history', {
             templateUrl: "html/order-history.htm",
-            controller: 'Main'
+            controller: 'HomeController'
         })
         .when('/order-receipt', {
             templateUrl: "html/order-receipt.htm",
-            controller: 'Main'
+            controller: 'HomeController'
         })
         .when('/location', {
             templateUrl: 'html/create-account.htm'
@@ -131,7 +131,7 @@ app.controller('LayoutController', function($scope, $auth) {
         console.log(globalVars);
         if (globalVars.user.id) {
             $scope.config.oldHeader = true;
-            window.location = "https://" + window.location.hostname + "/#!/home";
+            // window.location = "https://" + window.location.hostname + "/#!/home";
 
             setUserDetails(globalVars.user)
         }

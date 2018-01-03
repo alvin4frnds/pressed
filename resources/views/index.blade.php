@@ -196,7 +196,7 @@
                     <div class="col-sm-12">
                         <div class="footer-bottom">
                             <div class="col-sm-6">
-                                <p>AxiomThemes © 2017. All Rights Reserved Terms of Use and Privacy Policy</p>
+                                <p>All Rights Reserved Terms of Use and Privacy Policy</p>
                             </div>
                             <div class="col-sm-6" style="padding-right: 0">
                                 <p class="pull-right">

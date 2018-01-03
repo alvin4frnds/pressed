@@ -15,7 +15,7 @@
         url('../fonts/Graphik-Medium.woff2') format('woff2'),
         url('../fonts/Graphik-Medium.woff') format('woff'),
         url('../fonts/Graphik-Medium.ttf') format('truetype');
-     
+
     font-style: normal;
 }
 @font-face {
@@ -25,7 +25,7 @@
         url('../fonts/Graphik-Light.woff2') format('woff2'),
         url('../fonts/Graphik-Light.woff') format('woff'),
         url('../fonts/Graphik-Light.ttf') format('truetype');
-    
+
     font-style: normal;
 }
 
@@ -33,7 +33,7 @@ body{
 
 	margin: 0;
 	padding: 0;
-	 font-family: 'Graphik-Light'; 
+	 font-family: 'Graphik-Light';
 	background: #FBFBFB;
 }
 a {
@@ -46,7 +46,7 @@ a {
 	overflow: hidden;
 }
 
-.registration h1{ 
+.registration h1{
 	    font-family: Graphik-medium;
      font-size: 24px;
 	text-transform: capitalize;
@@ -68,7 +68,7 @@ a {
     border-style: solid;
     border-radius: 6px;
     width: 100%;
-    
+
 }
 .signinop a{
     color: #FF8686;
@@ -120,7 +120,7 @@ table, th, td {
 }
 th, td {
     padding: 5px;
-    text-align: left;    
+    text-align: left;
 }
 
 .dropdown-menu>li>a {
@@ -165,7 +165,7 @@ th, td {
 }
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
     color: #555;
-     background-color: transparent; 
+     background-color: transparent;
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -173,9 +173,9 @@ th, td {
     font-size: 14px;
 }
 .process-item-content h5{
-	
-	 font-family: Graphik-medium; 
-color: #777; 
+
+	 font-family: Graphik-medium;
+color: #777;
 }
 .navbar-right li:last-child{
     border: 1px solid #DDDDDD;
@@ -226,7 +226,7 @@ a.demo-btn{
     border-radius: 6px;
     border: 1px solid #ccc;
     text-transform: capitalize;
-	 
+
 }
 
 .header-content p{
@@ -247,7 +247,8 @@ process
 .process{
 	overflow: hidden;
     background-color: #FBFBFB;
-    border: solid 1px #E8E8E8;
+    border: none;
+    border-bottom: solid 1px #E8E8E8;
     padding-top: 14px;
 }
 .process-text{
@@ -265,7 +266,7 @@ process
     top: 40%;
     left: 0;
     font-size: 30px;
-   
+
     background-color: #FFFFFF;
     height: 60px;
     width: 30px;
@@ -299,19 +300,19 @@ process
 	padding-left:15px;
 }
 .content-area .owl-carousel .owl-next .fa:hover{
-	
+
 	color: #1E63D9;
 }
 
 .content-area .owl-carousel .owl-prev .fa:hover{
-	
+
 	color: #1E63D9;
 }
 
 
 .content-area .owl-carousel:hover .owl-prev {
 	display: block;
-	
+
 }
 .content-area .owl-carousel:hover .owl-next {
 	display: block;
@@ -374,7 +375,6 @@ process
 }
 
 .ins-singe-item p{
-	border-bottom: 1px solid #ccc;
 	    padding-bottom: 12px;
 }
 .ins-singe-item a.demos-btn{
@@ -395,7 +395,7 @@ process
 	font-size: 14px;
    font-weight: 600;
 }
- 
+
 .check-status h4 img{
     width: 35px;
     height: auto;
@@ -437,7 +437,7 @@ process
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
     color: #FF8686;
     cursor: default;
-     background-color: transparent; 
+     background-color: transparent;
     border: none;
     border-bottom-color: transparent;
 }
@@ -541,14 +541,21 @@ section.pickub-area {
 .pickub-left {
     background: #F7F8FB;
     text-transform: capitalize;
-    margin-top: 30px;
+    padding: 30px 20px 0;
+    margin: 0;
 }
 .pick-box {
     background: #fff;
-    min-height: 50px;
+    min-height: 76px;
+    border: solid 1px #EAEAEA;
 }
 .pick-box p{
-    padding: 10px;
+    padding: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: Graphik-regular, serif;
+    font-weight: 500;
+    letter-spacing: 0.50px;
 }
 .blog-area{
     overflow: hidden;
@@ -656,7 +663,7 @@ premium-area
 .premium-title h3{
     color: #3C3A3C;
     text-transform: capitalize;
-    
+
 	font-family: Graphik-medium;
 }
 .premium-title p{
@@ -679,7 +686,7 @@ premium-area
   border-bottom: 1px solid #ccc;
 }
 table, th, td {
-     border: none; 
+     border: none;
     border-collapse: collapse;
 }
 
@@ -703,7 +710,7 @@ pickup-details
 .pickup-details p{
        height: 40px;
     background: #fff;
-    padding: 10px; 
+    padding: 10px;
     font-family: Graphik-medium;
 }
 
@@ -720,7 +727,7 @@ pickup-details
     line-height: 1;
     color: #555;
     text-align: center;
-     background-color: #fff; 
+     background-color: #fff;
     border: none;
     border-radius: 4px;
 }
@@ -728,7 +735,7 @@ pickup-details
 .form-control {
     height: 40px;
     border:transparent;
-  
+
 }
 .option a{
     background: #fff;
@@ -844,8 +851,8 @@ order-history
 .order-history  .order-his-table {
     background: #fff;
     overflow: hidden;
-    padding:   15px;
-    margin-bottom: 20px;
+    padding: 15px 15px 50px;
+    margin-bottom: 5px;
     text-transform: capitalize;
     font-weight: 500;
 }
@@ -858,7 +865,7 @@ order-history
 .order-history  .order-his-table .color{
     width: 20px;
     height: 20px;
-    background: red;
+    background: #C0BBFF;
     float: left;
     margin-right: 5px;
 }
@@ -868,6 +875,7 @@ order-history
     border: 1px solid #ccc;
     border-radius: 4px;
     text-decoration: none;
+    margin-right: 10px;
 }
 .order-history .order-his-table a.order-btnvv{
     display: inline-block;
@@ -919,6 +927,8 @@ payments pages
 }
 .methods h4{
     text-transform: capitalize;
+    margin-bottom: 30px;
+    font-family: Graphik-regular, serif;
 }
 .methods i{
     font-size: 30px;
@@ -969,7 +979,7 @@ Check out page
       color: #696969;
     text-transform: uppercase;
     font-family: Graphik-medium;
-    font-size: 14px; 
+    font-size: 14px;
 }
 
 .total-tables .table>tbody>tr>td, .total-tables .table>tbody>tr>th, .total-tables .table>tfoot>tr>td, .total-tables .table>tfoot>tr>th,.total-tables  .table>thead>tr>td, .total-tables .table>thead>tr>th {
@@ -1017,14 +1027,14 @@ Price page
     font-size: 18px;
     background: #F7F7F7;
     color: #FF8686;
-    
+
     padding: 14px;
     border-radius: 50%;
 }
 
 .check-status{
     background: #F7F8FB;
-  
+
     overflow: hidden;
 }
 .Search {
@@ -1046,7 +1056,7 @@ save-card pages
 *******************************************/
 .save-card{
     overflow: hidden;
-    margin: 30px 0; 
+    margin: 30px 0;
 }
 .save-card h4{
     text-transform: capitalize;
@@ -1070,7 +1080,7 @@ save-card pages
 
 }
 .date-option .form-control {
-  
+
     border: 1px solid #ccc;
 }
 .date-option select{
@@ -1207,6 +1217,7 @@ footer {
 
 .instractions {
     background-color: #f6f7fa;
+    padding-bottom: 30px;
 }
 
 .signup-btn button {
@@ -1516,4 +1527,67 @@ ul.dropdown-menu>li {
 
 ul.dropdown-menu {
     padding-bottom: 0;
+}
+
+.home-instructions {
+    font-size: 14px;
+    color: #85939D;
+    font-family: Graphik-regular, serif;
+}
+
+.google-facebook-button {
+    color: #3A383A !important;
+    font-family: Graphik-regular, serif;
+    font-size: 14px;
+}
+
+.checkout-headers {
+    color: #696969;
+    font-family: Graphik-medium, serif;
+    font-size: 14px;
+}
+
+.ins-singe-item img {
+    width: 18px;
+    margin-right: 10px;
+    max-height: 30px;
+}
+
+.ins-singe-item p {
+    font-family: Graphik-regular, serif;
+    vertical-align: middle;
+    margin-bottom: 0;
+}
+
+
+.ins-singe-item hr {
+    padding: 0;
+    color: #DDDDDD;
+    margin: 0 0 0 30px;
+    border: none #DDDDDD;
+    background-color: #DDDDDD;
+    height: 1px;
+}
+
+div.methods {
+    border: solid 1px #EAEAEA;
+    border-radius: 10px
+}
+
+div.methods:hover {
+    border-color: #FF8686;
+}
+
+.order-his-table h4 {
+    font-weight: 800;
+}
+
+.order-his-table p {
+    margin-bottom: 5px;
+}
+
+.order-history-buttons-container {
+    padding-top: 7%;
+    height: 100%;
+    padding-left: 10%;
 }
