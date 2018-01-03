@@ -492,9 +492,15 @@ process
 }
 .ins-content{
     overflow: hidden;
-    margin-top: 75%;
     font-family: Graphik-medium;
 }
+
+@media screen and (min-width: 768px) {
+    .ins-content {
+        padding-top: 50%;
+    }
+}
+
 .ins-content h2{
       font-size: 18px;
     color: #000;
