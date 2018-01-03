@@ -1649,3 +1649,22 @@ i.fa-plus-circle {
     text-align: center;
     font-size: 21px !important;
 }
+
+table.pricing-table tr td {
+    font-family: Graphik-regular, serif;
+    font-size: 14px;
+}
+
+.premium-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.premium-img {
+    display: block;
+    left: 0;
+    top: 0;
+    right: 0;
+}

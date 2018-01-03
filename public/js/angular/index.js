@@ -13,6 +13,10 @@ app.config(function($routeProvider) {
             templateUrl : "html/login.htm",
             controller: 'SignupLogin'
         })
+        .when("/pricing-big", {
+            templateUrl : "html/pricing.htm",
+            controller: 'Main'
+        })
         .when("/logout", {
             templateUrl : "html/login.htm",
             controller: 'Logout'
