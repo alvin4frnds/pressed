@@ -476,7 +476,7 @@ process
 	 border-radius: 50%;
 }
 .tab-content tr{
-	border-bottom: 1px solid #ccc;
+	border-bottom: 1px solid #f3f3f3;
 }
 .tab-content a{
     margin-top: 20px;
@@ -1628,10 +1628,24 @@ ul.estimate-price-navs>li.active {
 }
 
 table#price-table tr td:first-child {
-    padding-left: 30px;
+    padding-left: 40px;
     font-family: Graphik-medium;
 }
 
 table#price-table tr td:nth-child(2) {
     font-family: Graphik-medium;
+}
+
+i.fa-minus-circle {
+    width: 23px;
+    height: 23px;
+    text-align: center;
+    font-size: 21px !important;
+}
+
+i.fa-plus-circle {
+    width: 23px;
+    height: 23px;
+    text-align: center;
+    font-size: 21px !important;
 }

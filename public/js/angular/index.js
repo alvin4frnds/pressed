@@ -21,6 +21,10 @@ app.config(function($routeProvider) {
             templateUrl: "html/password-recover.htm",
             controller: "SignupLogin"
         })
+        .when('/forgot-password', {
+            templateUrl: "html/request-demo.htm",
+            controller: "NoHeaderFooter"
+        })
         .when('/create-account', {
             templateUrl: 'html/create-account.htm',
             controller: 'SignupLogin'
