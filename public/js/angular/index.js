@@ -64,6 +64,10 @@ app.config(function($routeProvider) {
             templateUrl : "html/care.htm",
             controller: 'NoHeaderFooter'
         })
+        .when("/price", {
+            templateUrl : "html/price.htm",
+            controller: 'NoHeaderFooter'
+        })
         .when("/process", {
             templateUrl : "html/checkout.htm",
             controller: 'NoHeaderFooter'

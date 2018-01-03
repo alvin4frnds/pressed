@@ -1617,3 +1617,21 @@ div.methods:hover {
     height: 100%;
     padding-left: 10%;
 }
+
+ul.estimate-price-navs>li {
+    text-align: center;
+    width: 50%;
+}
+
+ul.estimate-price-navs>li.active {
+    border-bottom: solid 2px #FF8686;
+}
+
+table#price-table tr td:first-child {
+    padding-left: 30px;
+    font-family: Graphik-medium;
+}
+
+table#price-table tr td:nth-child(2) {
+    font-family: Graphik-medium;
+}
