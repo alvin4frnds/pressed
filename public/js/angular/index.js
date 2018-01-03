@@ -47,15 +47,15 @@ app.config(function($routeProvider) {
         })
         .when('/payments', {
             templateUrl: "html/payments.htm",
-            controller: 'HomeController'
+            controller: 'NoFooter'
         })
         .when('/save-card', {
             templateUrl: "html/save-card.htm",
-            controller: 'HomeController'
+            controller: 'NoFooter'
         })
         .when('/order-status', {
             templateUrl: "html/order-status.htm",
-            controller: 'HomeController'
+            controller: 'NoFooter'
         })
         .when('/order-history', {
             templateUrl: "html/order-history.htm",
@@ -63,7 +63,7 @@ app.config(function($routeProvider) {
         })
         .when('/order-receipt', {
             templateUrl: "html/order-receipt.htm",
-            controller: 'HomeController'
+            controller: 'NoFooter'
         })
         .when('/location', {
             templateUrl: 'html/create-account.htm'

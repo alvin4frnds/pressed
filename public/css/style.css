@@ -1189,6 +1189,7 @@ landing2-image"
 
 
 .care-save img{
+    height: 20px;
     float: right;
 }
 
@@ -1351,7 +1352,7 @@ html, body, #bs-example-navbar-collapse-1 {
 }
 
 .light-font {
-    font-family: Graphik-Light, serif;
+    font-family: Graphik-Light, serif !important;
 }
 
 .regular-font {
@@ -1671,4 +1672,9 @@ table.pricing-table tr td:nth-child(2) {
     left: 0;
     top: 0;
     right: 0;
+}
+
+.total-table .table>tbody>tr>td {
+    padding: 2px 10px;
+    font-family: Graphik-regular, serif;
 }
