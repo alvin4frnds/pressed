@@ -125,6 +125,7 @@
     <script src="js/angular/index.js"></script>
     <script src="js/angular/SignupLogin.js"></script>
     <script src="js/angular/HomeController.js"></script>
+    <script src="js/angular/NoHeaderFooter.js"></script>
 
     <!-- footer-area -->
     <footer class="footer-area" ng-show="config.oldHeader && config.showHeaderFooter">
