@@ -709,7 +709,7 @@ premium-area
     padding: 8px;
     line-height: 1.42857143;
       border-top: transparent;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #F2F2F2;
 }
 table, th, td {
      border: none;
@@ -1653,6 +1653,10 @@ i.fa-plus-circle {
 table.pricing-table tr td {
     font-family: Graphik-regular, serif;
     font-size: 14px;
+}
+
+table.pricing-table tr td:nth-child(2) {
+    text-align: right;
 }
 
 .premium-title {
