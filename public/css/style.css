@@ -1659,14 +1659,14 @@ table.pricing-table tr td:nth-child(2) {
     text-align: right;
 }
 
-.premium-title {
+.pricing-premium-title {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
 }
 
-.premium-img {
+.pricing-premium-img {
     display: block;
     left: 0;
     top: 0;
