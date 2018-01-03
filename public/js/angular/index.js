@@ -51,7 +51,7 @@ app.config(function($routeProvider) {
         })
         .when('/order-history', {
             templateUrl: "html/order-history.htm",
-            controller: 'HomeController'
+            controller: 'NoFooter'
         })
         .when('/order-receipt', {
             templateUrl: "html/order-receipt.htm",
@@ -65,13 +65,16 @@ app.config(function($routeProvider) {
             controller: 'NoHeaderFooter'
         })
         .when("/process", {
-            templateUrl : "html/checkout.htm"
+            templateUrl : "html/checkout.htm",
+            controller: 'NoHeaderFooter'
         })
         .when("/about", {
-            templateUrl : "html/landing1.htm"
+            templateUrl : "html/landing1.htm",
+            controller: 'NoHeaderFooter'
         })
         .when("/request-demo", {
-            templateUrl : "html/login.htm"
+            templateUrl : "html/login.htm",
+            controller: 'NoHeaderFooter'
         });
 });
 app.config(function($authProvider) {
