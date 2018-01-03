@@ -21,9 +21,9 @@ app.config(function($routeProvider) {
             templateUrl: "html/password-recover.htm",
             controller: "SignupLogin"
         })
-        .when('/forgot-password', {
+        .when('/request-demo', {
             templateUrl: "html/request-demo.htm",
-            controller: "NoHeaderFooter"
+            controller: "SignupLogin"
         })
         .when('/create-account', {
             templateUrl: 'html/create-account.htm',
@@ -78,10 +78,6 @@ app.config(function($routeProvider) {
         })
         .when("/about", {
             templateUrl : "html/landing1.htm",
-            controller: 'NoHeaderFooter'
-        })
-        .when("/request-demo", {
-            templateUrl : "html/login.htm",
             controller: 'NoHeaderFooter'
         });
 });
