@@ -63,7 +63,7 @@ app.config(function($routeProvider) {
         })
         .when('/order-receipt', {
             templateUrl: "html/order-receipt.htm",
-            controller: 'NoFooter'
+            controller: 'NoHeaderFooter'
         })
         .when('/location', {
             templateUrl: 'html/create-account.htm'
