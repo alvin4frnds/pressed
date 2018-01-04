@@ -51,11 +51,11 @@ app.config(function($routeProvider) {
         })
         .when('/save-card', {
             templateUrl: "html/save-card.htm",
-            controller: 'NoFooter'
+            controller: 'NoHeaderFooter'
         })
         .when('/order-status', {
             templateUrl: "html/order-status.htm",
-            controller: 'NoFooter'
+            controller: 'NoHeaderFooter'
         })
         .when('/order-history', {
             templateUrl: "html/order-history.htm",

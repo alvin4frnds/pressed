@@ -15,6 +15,10 @@ app.controller('HomeController', function($scope) {
         console.log("gettheimage() called: ");
 
         $scope.mainImage = (globalVars.mainImage === "wash-&-fold") ? "images/food.png" : "images/dry-clean.png";
+
+        if (window.location.hash === "#!/wash-&-fold")  $scope.mainImage = "images/food.png";
+
+        if (window.location.hash === "#!/dry-clean")  $scope.mainImage = "images/dry-clean.png";
     };
 
     $scope.logout = function() {

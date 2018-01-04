@@ -95,7 +95,7 @@
                     <li class="dropdown profile" style="border: 0">
                         <a class="dropdown-toggle bold-font" data-toggle="dropdown" role="button" aria-haspopup="true"
                            aria-expanded="false"
-                           style="position: relative; background-color: #f9f9f9; padding-top: 20px; padding-bottom: 10px;">hi @{{ config.firstName || "there" }}
+                           style="position: relative; background-color: #f9f9f9; padding-top: 10px; padding-bottom: 10px;">hi @{{ config.firstName || "there" }}
                             !&nbsp;&nbsp;&nbsp;
                                 <img ng-src='@{{ config.profileImage || "images/Man.png" }}' alt=""
                                         style="width: 40px; height: 40px; border-radius: 20px;">
@@ -126,6 +126,7 @@
     <script src="js/angular/SignupLogin.js"></script>
     <script src="js/angular/HomeController.js"></script>
     <script src="js/angular/NoHeaderFooter.js"></script>
+    <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDnT6ewhJpccffkJRlbAPyCQeQKJxJfLQ8&libraries=places'></script>
 
     <!-- footer-area -->
     <footer class="footer-area" ng-show="config.oldHeader && config.showHeaderFooter">
