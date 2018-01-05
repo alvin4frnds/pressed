@@ -994,7 +994,11 @@ Check out page
 }
 .shop-list span{
     border: 1px solid #ccc;
-    padding: 6px;
+    height: 25px;
+    float: left;
+    width: 25px;
+    padding: 3px 8px;
+    margin-right: 10px;
 }
 
 .card-number {
