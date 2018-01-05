@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="facebook-app-client-id" content="871629239710896">
     <meta name="google-signin-client_id" content="152654844989-060rj3nmkr7udbmvmef39mg3prm6brg3.apps.googleusercontent.com">
+    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+    <META HTTP-EQUIV="Expires" CONTENT="-1">
+
     <title>{{ env("APP_NAME", "Pressed") }}</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="all"/>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i" rel="stylesheet">
