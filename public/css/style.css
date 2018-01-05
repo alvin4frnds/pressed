@@ -1723,3 +1723,7 @@ section#no-text-transform p {
 .ins-singe-item input[type='checkbox']:checked {
     background-image: url('../img/checkbox-checked.png');
 }
+
+.ins-singe-item {
+    padding-left: 25px;
+}
