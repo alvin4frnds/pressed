@@ -9,7 +9,7 @@ app.controller('NoFooter', function($scope) {
 });
 function setupGoogleMap() {
 
-    if (! $("#googleMap").length) return;
+    // if (! $("#googleMap").length) return;
 
     var myCenter=new google.maps.LatLng(23.752390,90.374173);
 
