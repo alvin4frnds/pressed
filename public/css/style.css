@@ -567,7 +567,7 @@ section.pickub-area {
 .pickub-left {
     background: #F7F8FB;
     text-transform: capitalize;
-    padding: 20px 20px 0;
+    padding: 5px 20px 0;
     margin: 0;
 }
 .pick-box {
@@ -1730,4 +1730,25 @@ section#no-text-transform p {
 
 .ins-singe-item {
     padding-left: 25px;
+}
+
+
+
+.total-tables .row {
+    padding-top: 4px;
+}
+
+.total-tables .final {
+    font-family: Graphik-medium, serif;
+    padding-top: 20px;
+}
+
+.total-tables .right {
+    text-align: right;
+}
+.total-tables {
+    background-color: white;
+    font-family: Graphik-regular, serif;
+    padding: 20px 40px;
+    font-size: 16px;
 }
