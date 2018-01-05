@@ -1741,6 +1741,7 @@ section#no-text-transform p {
 .total-tables .final {
     font-family: Graphik-medium, serif;
     padding-top: 20px;
+    font-size: 18px;
 }
 
 .total-tables .right {
@@ -1751,4 +1752,14 @@ section#no-text-transform p {
     font-family: Graphik-regular, serif;
     padding: 20px 40px;
     font-size: 16px;
+}
+
+.ceckout-area p>b {
+    font-weight: 500;
+    /* padding-top: 200px; */
+    position: relative;
+    display: block;
+    top: 3px;
+    bottom: 0;
+    left: 0;
 }
