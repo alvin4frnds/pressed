@@ -1763,3 +1763,27 @@ section#no-text-transform p {
     bottom: 0;
     left: 0;
 }
+
+@media screen and (max-width: 400px) {
+
+    .ins-singe-item a.demo-btn, .ins-singe-item a.demos-btn {
+        padding: 2px 5px;
+    }
+
+    .ins-singe-item {
+        padding-left: 0;
+    }
+
+    .ins-singe-item img {
+        margin-right: 0;
+    }
+
+    .col-sm-6.col-sm-offset-3 {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    a.demos-btn {
+        margin-right: 0;
+    }
+}
